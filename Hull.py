@@ -150,12 +150,6 @@ def convex_hull(point_list):
     hull = [upper_hull.pop(0)]
     hull.extend(reversed(upper_hull))
 
-    if hull[-1].x == 0 and hull[-1].y == 0:
-        temp = hull
-        x = hull.pop(-1)
-        hull = [x]
-        hull.extend(temp)
-
     return hull
 
 
